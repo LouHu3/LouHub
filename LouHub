@@ -1,7 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Lou Hub", "DarkTheme")
 
----MAIN
+---Main
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
 
@@ -11,17 +11,49 @@ MainSection:NewButton("Youtube Simulator Z", "Auto E", function()
 end)
 
 
+MainSection:NewButton("Murder Mystery 2", "EclipseHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+end)
+
+
+MainSection:NewButton("Anime Warrior 2", "Auto Farm", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0youtubez", true))()
+end)
+
+
+MainSection:NewButton("Pls Donate", "Auto Beg", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/tzechco"))()
+end)
+
+
+MainSection:NewButton("Anime Dimension", "Auto Farm", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/lifaiossama/errors/main/Intruders.html")()
+end)
+
+
 ---Misc
-local Main = Window:NewTab("Misc")
-local MainSection = Main:NewSection("Misc")
+local Misc = Window:NewTab("Misc")
+local MiscSection = Misc:NewSection("Section Name")
 
+MiscSection:NewSlider("Walkspeed", "Speed", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
 
-MainSection:NewButton("Infinite Yield", "Commands", function()
+MiscSection:NewSlider("Jump Power", "Jump", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+MiscSection:NewButton("Default Walk/Jump", "Reset to defaults", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+MiscSection:NewButton("Infinite Yield", "Commands", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
 
-MainSection:NewButton("Anti Afk", "AFK", function()
+MiscSection:NewButton("Anti Afk", "AFK", function()
     wait(0.5)local ba=Instance.new("ScreenGui")
 local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
 local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
@@ -42,23 +74,3 @@ game:service'Players'.LocalPlayer.Idled:connect(function()
 bb:CaptureController()bb:ClickButton2(Vector2.new())
 ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status : Active"end)
 end)
-
-
-MainSection:NewToggle("Walkspeed", "Fast walk", function(state)
-        if state then
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
-        else
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-        end
-    end)
-
-
-MainSection:NewToggle("Jump Power", "High Jump", function(state)
-        if state then
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
-        else
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-        end
-    end)
-
-
