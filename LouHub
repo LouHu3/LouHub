@@ -16,12 +16,12 @@ local Main = Window:NewTab("Misc")
 local MainSection = Main:NewSection("Misc")
 
 
-MiscSection:NewButton("Infinite Yield", "Commands", function()
+MainSection:NewButton("Infinite Yield", "Commands", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
 
-MiscSection:NewButton("Anti Afk", "AFK", function()
+MainSection:NewButton("Anti Afk", "AFK", function()
     wait(0.5)local ba=Instance.new("ScreenGui")
 local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
 local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
@@ -44,7 +44,7 @@ ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status 
 end)
 
 
-MiscSection:NewToggle("Walkspeed", "Fast walk", function(state)
+MainSection:NewToggle("Walkspeed", "Fast walk", function(state)
         if state then
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
         else
@@ -53,7 +53,7 @@ MiscSection:NewToggle("Walkspeed", "Fast walk", function(state)
     end)
 
 
-MicsSection:NewToggle("Jump Power", "High Jump", function(state)
+MainSection:NewToggle("Jump Power", "High Jump", function(state)
         if state then
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
         else
