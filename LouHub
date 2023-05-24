@@ -11,13 +11,8 @@ MainSection:NewButton("Youtube Simulator Z", "Auto E", function()
 end)
 
 
-MainSection:NewButton("Murder Mystery 2", "EclipseHub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
-end)
-
-
 MainSection:NewButton("Anime Warrior 2", "Auto Farm", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0youtubez", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Loader/main/PlatiniumLoader"))()
 end)
 
 
