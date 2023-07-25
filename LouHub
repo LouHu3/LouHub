@@ -6,8 +6,19 @@ local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
 
 
-MainSection:NewButton("Youtube Simulator Z", "Auto E", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0youtubez", true))()
+MainSection:NewButton("Youtube Simulator Z", "Dupe", function()
+    local rape_niggas_in_da_ass = game:GetService("Players").LocalPlayer.PlayerGui.Trading.Frame.Offer.Ready.TextLabel
+
+rape_niggas_in_da_ass:GetPropertyChangedSignal("Text"):Connect(function()
+if rape_niggas_in_da_ass.Text == '0' then
+    wait(0.5)
+        local args = {
+    [1] = workspace
+}
+
+game:GetService("ReplicatedStorage").Remotes.Events.SetMoneyMode:FireServer(unpack(args))
+print("DUPE SUCCESS I THINK IDRK YOU SHOULD HOPE!!!")
+    end
 end)
 
 
